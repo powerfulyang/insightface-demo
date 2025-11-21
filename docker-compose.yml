@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: insightface-demo
+    build:
+      context: .
+    runtime: nvidia
+    volumes:
+      - ./.insightface:/root/.insightface
+      - ./cluster_result:/app/cluster_result
